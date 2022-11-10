@@ -1,0 +1,8 @@
+.DS_Store
+
+npm-debug.log*
+# Build files
+dist
+
+# Dependency directory
+node_modules
