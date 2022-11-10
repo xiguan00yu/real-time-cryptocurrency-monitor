@@ -1,0 +1,32 @@
+.card {
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 8px;
+  padding: 16px;
+  border: 1px black solid;
+  border-radius: 6px;
+}
+
+.card > * {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.card > h2 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.card > h3 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: darkgoldenrod;
+}
+
+.card > p {
+  font-size: small;
+  color: #888888;
+}
