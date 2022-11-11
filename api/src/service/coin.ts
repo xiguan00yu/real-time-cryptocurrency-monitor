@@ -12,5 +12,5 @@ export const getCoinAssets = () =>
     .then((res) => res.json())
     .catch((e) => {
       console.warn("fetch coin assets get some error:", e);
-      return { error: "fetch coin error" };
+      return { error: -1 };
     });
