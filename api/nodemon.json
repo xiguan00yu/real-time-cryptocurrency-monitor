@@ -1,3 +1,4 @@
 {
-  "watch": ["src/", "main.ts"]
+  "watch": ["src", "main.ts"],
+  "ext": "js, json, ts"
 }
