@@ -17,9 +17,9 @@ const App: React.FC<{}> = () => {
   return (
     <div className="app">
       <h1>Cryptocurrency Realtime Price</h1>
-      <div ref={ref}>
+      <div data-testid="content" ref={ref}>
         {error && <span>failed to load</span>}
-        {!response && <span>loading...</span>}
+        {!response && !error && <span>loading...</span>}
         {!!response?.data && (
           <Grid
             className="app-grid"

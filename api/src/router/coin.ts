@@ -10,7 +10,7 @@ router.get("/assets", Cache, async (ctx, next) => {
   if (await ctx.cashed()) return;
   const data = await getCoinAssets();
   // error code or success code
-  ctx.status = !data?.error ? HttpStatus.INTERNAL_SERVER_ERROR : HttpStatus.OK;
+  ctx.status = !!data?.error ? HttpStatus.INTERNAL_SERVER_ERROR : HttpStatus.OK;
   ctx.body = {
     ok: !data?.error,
     data: Array.isArray(data) ? data : [],
