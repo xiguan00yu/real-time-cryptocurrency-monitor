@@ -8,43 +8,47 @@
 
 1. Setup api server (koa + ts)
 
-    - static resource access
-    
-    - coin asserts api interface (with cache logic)
+   - static resource access
+
+   - coin asserts api interface (with cache logic)
 
 2. Set web project (vite + react + ts)
 
-    - single page, display the prices of cryptocurrencies.
+   - single page, display the prices of cryptocurrencies.
 
-    - interval request server provides coin asserts interface
+   - interval request server provides coin asserts interface
 
 3. Consideration
 
-    - About project structure
-    ```
-    ├── README.md
-    ├── api
-    │   ├── main.ts                 # server entrance
-    │   ├── src                     
-    │   │   ├── app.ts
-    │   │   ├── config
-    │   │   ├── middleware         
-    │   │   ├── router
-    │   │   └── service
-    │   └── test                    # server unit test
-    ├── web
-        ├── src
-        │   ├── Components
-        │   ├── hooks
-        │   ├── main.css
-        │   └── main.tsx            # web entrance
-        ├── test                    # web unit test
-        └── vite.config.ts
-    ```
-    
-    - About Cache using [koa-cash](https://github.com/koajs/cash) Currently, in memory store is used, which is conducive to extension to use Redis and more.
+   - About project structure
 
-    - About Rendering a large data usinig [react-window](https://github.com/bvaughn/react-window) It reduces the amount of work (and time) required to render the initial view.
+   ```
+   ├── README.md
+   ├── api
+   │   ├── main.ts                 # server entrance
+   │   ├── src
+   │   │   ├── app.ts
+   │   │   ├── config
+   │   │   ├── middleware
+   │   │   ├── router
+   │   │   └── service
+   │   └── test                    # server unit test
+   ├── web
+       ├── src
+       │   ├── Components
+       │   ├── hooks
+       │   ├── main.css
+       │   └── main.tsx            # web entrance
+       ├── test                    # web unit test
+       └── vite.config.ts
+   ```
+
+   - About Cache using [koa-cash](https://github.com/koajs/cash) Currently, in memory store is used, which is conducive to extension to use Redis and more.
+
+   - About Rendering a large data usinig [react-window](https://github.com/bvaughn/react-window) It reduces the amount of work (and time) required to render the initial view.
+
+   - About web adapted for different size devices.
+
 ## Preview
 
 1. Summary
@@ -55,7 +59,7 @@
 # clone project
 git clone git@github.com:xiguan00yu/real-time-cryptocurrency-monitor.git
 
-# into project 
+# into project
 cd real-time-cryptocurrency-monitor
 
 # install, Don't worry that it will install API and web dependencies
@@ -72,7 +76,6 @@ npm run preview
 # browser input url: http://localhost:3000
 ```
 
-
 ## Unit Test (jest)
 
 1. api project coverage
@@ -88,6 +91,7 @@ npm i
 # test
 npm run test
 ```
+
 ![api-unit-test](./assets/api-unit-test.png)
 
 2. web project coverage
@@ -103,4 +107,5 @@ npm i
 # test
 npm run test
 ```
+
 ![web-unit-test](./assets/web-unit-test.png)
