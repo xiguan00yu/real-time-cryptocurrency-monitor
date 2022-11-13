@@ -51,7 +51,7 @@
 
 ## Preview
 
-1. Summary
+1. Summary(gif)
 
 ![architecture-design](./assets/preview.gif)
 
