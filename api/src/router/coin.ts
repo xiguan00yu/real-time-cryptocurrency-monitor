@@ -1,6 +1,6 @@
 import Router from "@koa/router";
 import HttpStatus from "http-status";
-import Cache from "../middleware/lru-cache";
+import Cache from "../middleware/cache";
 import { getCoinAssets } from "../service/coin";
 
 const router = new Router();
