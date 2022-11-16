@@ -43,7 +43,7 @@
        └── vite.config.ts
    ```
 
-   - About Cache using [koa-cash](https://github.com/koajs/cash) Currently, ~~~in memory store is used, which is conducive to extension to use Redis and more.~~~ redis will be used as the first cache. If the connection fails, memory store will be used.[Redis URL](https://github.com/xiguan00yu/real-time-cryptocurrency-monitor/blob/main/api/.env) can be injected through environment variables.
+   - About Cache using [koa-cash](https://github.com/koajs/cash) Currently, ~~in memory store is used, which is conducive to extension to use Redis and more.~~ redis will be used as the first cache. If the connection fails, memory store will be used.[Redis URL](https://github.com/xiguan00yu/real-time-cryptocurrency-monitor/blob/main/api/.env) can be injected through environment variables.
 
    - About Rendering a large data usinig [react-window](https://github.com/bvaughn/react-window) It reduces the amount of work (and time) required to render the initial view.
 
